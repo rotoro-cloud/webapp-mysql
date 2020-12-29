@@ -27,7 +27,7 @@ def main():
 
 @app.route("/debug")
 def debug():
-    rocket = 'rocker_scanner'
+    rocket = 'rocket_scanner'
     return render_template('view.html', debug="Переменные окружения: DB_Host=" + (os.environ.get('DB_Host') or "Not Set") + "; DB_Database=" + (os.environ.get('DB_Database')  or "Not Set") + "; DB_User=" + (os.environ.get('DB_User')  or "Not Set") + "; DB_Password=" + (os.environ.get('DB_Password')  or "Not Set"), rocket=rocket)
 
 if __name__ == "__main__":
